@@ -20,7 +20,7 @@ ul li {
     margin-bottom: 10px;
 }
 
-ul li a {
+ul li a, .dropdown-btn {
     display: flex;
     align-items: center;
     padding: 5px 20px;
@@ -45,8 +45,6 @@ ul li a.active svg {
     fill: var(--accent-clr); 
 }
 
-
-
 body {
     padding: 0;
     margin: 0;
@@ -61,6 +59,9 @@ aside {
     padding: 20px;
     width: 250px;
     height: 100vh;
+    position: sticky;
+    top: 0;
+    align-self: start;
     border-right: 1px solid var(--line-clr);
     background-color: var(--base-clr);
 }
@@ -81,6 +82,15 @@ main {
     margin-bottom: 15px;
     color: var(--secondary-text-clr);
     display: inline-block;
+}
+
+.dropdown-btn {
+    width: 100%;
+    text-align: left;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    background: none;
 }
 
 /*@media(max-width: 800px){
