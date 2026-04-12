@@ -7,6 +7,8 @@ Responsible CSS Grid Template with HTML and Javascript
 
 ![Home](screenshots/before.png)
 
+---
+
 ###  Startseite (After)
 
 ![Home](screenshots/After.png)
