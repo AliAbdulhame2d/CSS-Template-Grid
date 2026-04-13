@@ -66,6 +66,20 @@ aside {
     background-color: var(--base-clr);
 }
 
+aside .sub-menu {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 300ms ease-in-out;
+}
+
+aside .sub-menu > div {
+    overflow: hidden;
+}
+
+aside .sub-menu.show {
+    grid-template-rows: 1fr;
+}
+
 main {
     padding: 20px;
 }
@@ -90,7 +104,13 @@ main {
     font: inherit;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
     background: none;
+}
+
+.dropdown-btn span {
+    flex-grow: 1;
 }
 
 /*@media(max-width: 800px){
