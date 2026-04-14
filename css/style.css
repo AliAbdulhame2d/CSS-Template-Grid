@@ -76,6 +76,10 @@ aside .sub-menu > div {
     overflow: hidden;
 }
 
+aside .sub-menu a {
+    padding-left: 2em;
+}
+
 aside .sub-menu.show {
     grid-template-rows: 1fr;
 }
@@ -111,6 +115,12 @@ main {
 
 .dropdown-btn span {
     flex-grow: 1;
+}
+
+/*Added by Javascript*/
+.rotate svg:last-child {
+    rotate: 180deg;
+    transition: 200ms ease;
 }
 
 /*@media(max-width: 800px){
