@@ -3,7 +3,7 @@ Responsible CSS Grid Template with HTML and Javascript
 
 ##  Screenshots
 
-###  Start Homepage (Before / only HTML )
+###  Start Homepage (Before | 'only HTML')
 
 ![Home](screenshots/before.png)
 
