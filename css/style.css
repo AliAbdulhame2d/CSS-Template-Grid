@@ -27,6 +27,7 @@ ul li a, .dropdown-btn {
     text-decoration: none;
     border-radius: 6px;
     color: var(--text-clr);
+    transition: 300ms ease-in-out;
 }
 
 ul li a:hover, 
@@ -36,13 +37,25 @@ ul li a.active {
 }
 
 ul li svg {
-    margin-right: 5px;
+    margin-right: 15px;
     fill: var(--text-clr);
+    width: 24px;
+    min-width: 24px;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 ul li a:hover svg, 
-ul li a.active svg {
+ul li a.active svg
+ {
     fill: var(--accent-clr); 
+}
+
+button {
+    background: none;
+    cursor: pointer;
+    border: none;
+    font: inherit;
 }
 
 body {
@@ -56,7 +69,7 @@ body {
 }
 
 aside {
-    padding: 20px;
+    padding: 5px 1em;
     width: 250px;
     height: 100vh;
     position: sticky;
@@ -64,6 +77,53 @@ aside {
     align-self: start;
     border-right: 1px solid var(--line-clr);
     background-color: var(--base-clr);
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+}
+
+aside.close {
+    width: 55px;
+}
+
+aside > ul > li:first-child {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+aside > ul > li:first-child button {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+aside > ul > li:first-child svg {
+    transition: rotate 300ms ease-in-out;
+}
+
+aside > ul > li:first-child button:hover,
+aside > ul > li:first-child button:hover svg {
+    fill: var(--accent-clr); 
+    background-color: var(--hover-clr);
+}
+
+aside > ul > li:first-child button.close svg {
+    rotate: 180deg;
+}
+
+aside.close > ul > li a,
+aside.close > ul > li button {
+    padding: 0;
+}
+
+.dropdown-btn:hover,
+.dropdown-btn:hover svg {
+    color: var(--accent-clr);
+    fill: var(--accent-clr); 
+    background-color: var(--hover-clr);
 }
 
 aside .sub-menu {
@@ -82,6 +142,15 @@ aside .sub-menu a {
 
 aside .sub-menu.show {
     grid-template-rows: 1fr;
+}
+
+span.logo {
+    transition: 300ms ease-in-out;
+}
+
+span.logo.hidden {
+    display: none;
+    
 }
 
 main {
@@ -105,12 +174,8 @@ main {
 .dropdown-btn {
     width: 100%;
     text-align: left;
-    font: inherit;
-    border: none;
-    cursor: pointer;
-    display: flex;
+    display: flex; 
     align-items: center;
-    background: none;
 }
 
 .dropdown-btn span {
@@ -120,7 +185,7 @@ main {
 /*Added by Javascript*/
 .rotate svg:last-child {
     rotate: 180deg;
-    transition: 200ms ease;
+    transition: 300ms ease;
 }
 
 /*@media(max-width: 800px){

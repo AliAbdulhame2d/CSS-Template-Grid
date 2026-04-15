@@ -12,3 +12,9 @@ Responsible CSS Grid Template with HTML and Javascript
 ###  Start Homepage (After)
 
 ![Home](screenshots/After.png)
+
+---
+
+###  Start Homepage (Hiding the Sidebar)
+
+![Home](screenshots/sidebar.png)
